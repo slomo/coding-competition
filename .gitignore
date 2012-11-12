@@ -1,1 +1,9 @@
-*.pyc
+# python specific
+*.py[cod]
+
+# vim specific
+*.swp
+
+# for this project
+example/target
+
