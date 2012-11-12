@@ -1,0 +1,23 @@
+{
+    "compile" : {
+        "type" : "binary",
+        "desc" : "compiles programm by invoking 'make compile' and succeeds iff 0 is returned",
+        "params" : [ "time" ]
+    },
+
+    "binarysize" : {
+        "type" : "scalar",
+        "desc" : "returns size of everthing under /bin in bytes"
+    },
+
+    "correctness" : {
+        "type" : "binary",
+        "desc" : "runs by running the challange code with 'make challange-correctness' and the participant code with 'make participant-correctness', succeeds iff the first returns 0",
+        "params" : [ "time" ]
+    },
+
+    "benchmark" : {
+        "type" : "scalar",
+        "desc" : "measures times needed to complete 'make participant-benchmark'"
+    }
+}
